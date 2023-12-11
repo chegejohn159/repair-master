@@ -1,0 +1,134 @@
+<div class="lg:py-10 py-4">
+  <main class="flex flex-col">
+
+    <div class="flex-col-between lg:flex-row-between w-full">
+
+      <div class="px-6 lg:px-8 lg:w-1/2 w-full">
+        <div class="mx-auto w-full max-w-2xl py-10 sm:py-48 lg:py-56">
+          <div class="text-center">
+            <p class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Repairing with Precision</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              Crafting excellence through precision repairs and swift solutions. Elevate your belongings with our expert craftsmanship and transparent commitment to excellence
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a [routerLink]="['/book-repair']" class="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold
+               leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2
+                focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Schedule a Repair</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-1/2 w-full bg-[url('/assets/pics/37691.jpg')] bg-cover bg-center">
+      </div>
+
+    </div>
+
+    <div class="mx-auto max-w-2xl lg:max-w-none px-6 lg:px-8 mt-10 bg-gradient-to-r from-indigo-50 via-cyan-50 to-violet-50 py-4">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+        <div class="flex flex-col">
+          <dt class="text-base font-semibold leading-7 text-gray-900 flex flex-col items-center justify-center">
+            <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+              <mat-icon class="white">flash_auto</mat-icon>
+            </div>
+            Quick Turnaround Time
+          </dt>
+          <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+            <p class="flex-auto text-center">Time is of the Essence, and We Deliver!
+              Your Satisfaction, Our Priority—Swift, Reliable, and Always On Time!</p>
+          </dd>
+        </div>
+
+        <div class="flex flex-col">
+          <dt class="text-base font-semibold leading-7 text-gray-900 flex flex-col items-center justify-center">
+            <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+              <mat-icon class="white">high_quality</mat-icon>
+            </div>
+            Quality Workmanship
+          </dt>
+          <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+            <p class="flex-auto text-center">
+              Where Quality Workmanship Meets Unmatched Expertise.
+              Trust Us to Restore, Refine, and Revive with Precision and Care
+            </p>
+          </dd>
+        </div>
+
+        <div class="flex flex-col">
+          <dt class="text-base font-semibold leading-7 text-gray-900 flex flex-col items-center justify-center">
+            <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+              <mat-icon class="white">price_check</mat-icon>
+            </div>
+            Transparent Pricing
+          </dt>
+          <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+            <p class="flex-auto text-center">
+              Discover the Transparency Advantage. No Hidden Costs, No Surprises—Just Honest, Straightforward Pricing
+              Tailored to Your Peace of Mind
+            </p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="mt-5">
+      <p class="text-4xl font-bold tracking-tight text-gray-900 text-center">How it Works</p>
+      <div class="grid grid-cols-12 gap-4 m-2 lg:px-40 px-6">
+
+        <mat-card class="div-4-12">
+          <mat-card-header>
+            <mat-card-title>
+              <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                <mat-icon class="white">event</mat-icon>
+              </div>
+              <p class="text text-gray-500 text-normal">Schedule for Repair</p>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="text-base leading-7 text-gray-600">Seamless Scheduling, Effortless Solutions: Your Repair Journey
+              Starts with a Simple Booking, Because Your Time Matters</p>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card class="div-4-12">
+          <mat-card-header>
+            <mat-card-title>
+              <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                <mat-icon class="white">engineering</mat-icon>
+              </div>
+              <p class="text text-gray-500 text-normal">Repair Done</p>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="text-base leading-7 text-gray-600">Crafting Perfection, Restoring Brilliance: Trust Us to
+              Transform Your Items with Unparalleled Skill and Precision</p>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card class="div-4-12">
+          <mat-card-header>
+            <mat-card-title>
+              <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                <mat-icon class="white">paid</mat-icon>
+              </div>
+              <p class="text text-gray-500 text-normal">Make Payment</p>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="text-base leading-7 text-gray-600">Transparent Transactions, Value Delivered: Pay with Confidence,
+              Knowing Quality Repairs Come with Clear and Fair Pricing</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a [routerLink]="['/book-repair']" class="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold
+               leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2
+                focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Schedule a Repair</a>
+      </div>
+
+    </div>
+
+
+  </main>
+</div>

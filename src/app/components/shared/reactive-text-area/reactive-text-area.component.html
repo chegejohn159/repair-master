@@ -1,0 +1,24 @@
+<div [formGroup]="form!!" class="w-full mt-1">
+
+  <div>
+    <label class="default-label">{{ label }} </label>
+    <div class="mt-1">
+      <textarea class="default-input"
+             [formControlName]="key"
+             [id]="id"
+             [pattern]="pattern"
+             [placeholder]="placeholder">
+      </textarea>
+    </div>
+  </div>
+
+  <mat-error *ngIf="hasFieldError()">
+    <ng-container *ngIf="showError()">
+      This field is required
+    </ng-container>
+    <ng-container *ngIf="hasPatternError()">
+      This field does not match required format
+    </ng-container>
+  </mat-error>
+
+</div>

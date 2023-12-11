@@ -1,0 +1,21 @@
+<div [formGroup]="form!!"  class="mt-1">
+
+  <div>
+    <label for="location" class="default-label">{{label}}</label>
+    <div class="mt-1">
+      <select id="location" name="location" class="default-input" [multiple]="multiple">
+        <option *ngFor="let choice of choices" [value]="choice.id">
+          {{choice.name}}
+        </option>
+      </select>
+    </div>
+
+  </div>
+
+  <mat-error *ngIf="hasFieldError()">
+    <ng-container *ngIf="showError()">
+      This field is required
+    </ng-container>
+
+  </mat-error>
+</div>

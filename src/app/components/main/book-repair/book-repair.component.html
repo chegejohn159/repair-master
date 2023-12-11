@@ -1,0 +1,98 @@
+<div class="flex flex-col items-center w-full bg-gradient-to-r from-indigo-50 via-cyan-50 to-violet-50">
+
+  <form class="divide-gray-200 w-full p-4 md:max-w-2xl sm:py-32"  [formGroup]="repair_form"
+        id="repair_form">
+    <div class=" divide-gray-200">
+
+      <div class="py-10">
+        <div class="sm:mx-auto sm:w-full sm:max-w-md">
+          <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Schedule a Repair</h2>
+        </div>
+        <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+
+          <app-reactive-input
+            class="sm:col-span-3"
+            [form]="repair_form"
+            [id]="'first_name'"
+            [key]="'first_name'"
+            [label]="'First Name'"
+
+          >
+          </app-reactive-input>
+
+          <app-reactive-input
+            class="sm:col-span-3"
+            [form]="repair_form"
+            [id]="'last_name'"
+            [key]="'last_name'"
+            [label]="'Last Name'"
+
+          >
+          </app-reactive-input>
+
+          <app-reactive-input
+            class="sm:col-span-3"
+            [form]="repair_form"
+            [id]="'customer-email'"
+            [key]="'email'"
+            [label]="'Email address'"
+            [type]="'email'"
+          >
+          </app-reactive-input>
+
+
+          <app-reactive-input
+            class="sm:col-span-3"
+            [form]="repair_form"
+            [id]="'phone_number'"
+            [key]="'phone_number'"
+            [label]="'Phone Number'"
+          >
+          </app-reactive-input>
+
+          <app-reactive-input
+            class="sm:col-span-3"
+            [form]="repair_form"
+            [id]="'residence'"
+            [key]="'residence'"
+            [label]="'Residence'"
+          >
+          </app-reactive-input>
+
+          <app-reactive-select
+            class="sm:col-span-3"
+            [form]="repair_form"
+            [id]="'device'"
+            [key]="'device'"
+            [label]="'Item to Repair'"
+            [choices]="items"
+          >
+          </app-reactive-select>
+
+          <app-reactive-text-area
+            class="sm:col-span-6"
+            [form]="repair_form"
+            [id]="'description'"
+            [key]="'description'"
+            [label]="'Description'"
+          >
+
+          </app-reactive-text-area>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="py-5 border-t">
+      <div class="flex justify-end">
+        <button type="submit" class="submit-button">Submit Request</button>
+      </div>
+    </div>
+
+  </form>
+
+
+</div>
+
